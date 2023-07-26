@@ -13,18 +13,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        *{font-family: 'Lato', sans-serif;}
+        * {
+            font-family: 'Lato', sans-serif;
+        }
     </style>
 
 
 </head>
 
 <body>
-    <header>
+    <header class="container mx-auto">
 
         <!-- NAV BAR -->
-        <nav
-            class="md:bg-[#F85559] container mx-auto lg:text-white px-6 py-4 flex items-center justify-between rounded-full">
+        <nav class="md:bg-[#F85559]  lg:text-white px-6 py-4 flex items-center justify-between rounded-full">
             <!-- Left items -  hidden in mobile -->
             <div class="hidden md:flex space-x-4">
                 <a href="#" class="">Home</a>
@@ -40,16 +41,20 @@
             </div>
 
             <!-- Right items - hidden in mobile-->
-    <div class="hidden md:flex space-x-4">
-        <div class="relative">
-          <input type="text" placeholder="Search here" class="p-2 pr-10 rounded-full bg-white text-black focus:outline-none">
-          <div class="absolute right-3 top-2">
-            <svg class="h-6 w-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 15l5.656 5.657m-1.414-1.414l-5.657-5.656M10 16a6 6 0 100-12 6 6 0 000 12z"></path>
-            </svg>
-          </div>
-        </div>
-      </div>
+            <div class="hidden lg:flex space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search here"
+                        class="p-2 pr-10 rounded-full bg-white text-black focus:outline-none">
+                    <div class="absolute right-3 top-2">
+                        <svg class="h-6 w-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"
+                                d="M15 15l5.656 5.657m-1.414-1.414l-5.657-5.656M10 16a6 6 0 100-12 6 6 0 000 12z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
 
             <!-- Mobile menu button - shown in mobile -->
             <div class="md:hidden">
@@ -72,6 +77,69 @@
                 </div>
             </div>
         </nav>
+
+        <!-- BANNER -->
+        <section class="mt-8 p-5 md:p-0">
+            <div class="carousel w-full h-48 lg:h-[600px]">
+                <div id="slide1" class="carousel-item relative w-full bg-[url('images/banner1.png')] bg-no-repeat bg-cover rounded-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black opacity-70 rounded-lg z-10"></div>
+                    <div class="space-y-2 md:space-y-5 mx-auto my-auto text-center z-20">
+                        <h1 class="text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                        <p class="hidden md:block text-base md:text-xl md:font-medium text-white">We supply highly quality organic products</p>
+                        <p class=" md:hidden text-base md:text-xl md:font-medium text-white">We supply <br> highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                    </div>
+                    <!-- <img src="images/banner1.png" class="w-full" /> -->
+
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full bg-[url('images/banner2.png')] bg-no-repeat bg-cover rounded-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black opacity-70 rounded-lg z-10"></div>
+                    <div class="space-y-2 md:space-y-5 mx-auto my-auto text-center z-20">
+                        <h1 class="text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                        <p class="hidden md:block text-base md:text-xl md:font-medium text-white">We supply highly quality organic products</p>
+                        <p class=" md:hidden text-base md:text-xl md:font-medium text-white">We supply <br> highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                    </div>
+                    <!-- <img src="images/banner2.png" class="w-full" /> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full bg-[url('images/banner3.png')] bg-no-repeat bg-cover rounded-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black opacity-70 rounded-lg z-10"></div>
+                    <div class="space-y-2 md:space-y-5 mx-auto my-auto text-center z-20">
+                        <h1 class="text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                        <p class="hidden md:block text-base md:text-xl md:font-medium text-white">We supply highly quality organic products</p>
+                        <p class=" md:hidden text-base md:text-xl md:font-medium text-white">We supply <br> highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                    </div>
+                    <!-- <img src="images/banner3.png" class="w-full" /> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full bg-[url('images/banner4.png')] bg-no-repeat bg-cover rounded-lg">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black opacity-70 rounded-lg z-10"></div>
+                    <div class="space-y-2 md:space-y-5 mx-auto my-auto text-center z-20">
+                        <h1 class="text-2xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                        <p class="hidden md:block text-base md:text-xl md:font-medium text-white">We supply highly quality organic products</p>
+                        <p class=" md:hidden text-base md:text-xl md:font-medium text-white">We supply <br> highly quality organic products</p>
+                        <button class="btn bg-[#F85559] border-0 text-white">Shop Now</button>
+                    </div>
+                    <!-- <img src="images/banner4.png" class="w-full" /> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 z-30">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
     </header>
